@@ -1,0 +1,94 @@
+{
+  "bars": [
+    {
+      "State": "NY",
+      "City": "New York",
+      "Name": "Bar None",
+      "Website": "https://www.yelp.com/biz/bar-none-new-york?q=saints"
+    },
+    {
+      "State": "DC",
+      "City": "Washington",
+      "Name": "Nellie's",
+      "Website": "https://www.yelp.com/biz/nellies-sports-bar-washington?q=saints"
+    },
+    {
+      "State": "DC",
+      "City": "Washington",
+      "Name": "Little Miss Whiskey's Golden Dollar",
+      "Website": "https://www.yelp.com/biz/little-miss-whiskeys-golden-dollar-washington?q=saints"
+    },
+    {
+      "State": "GA",
+      "City": "Atlanta",
+      "Name": "Milltown Arms Tavern",
+      "Website": "https://www.milltownarmstavern.com/"
+    },
+    {
+      "State": "GA",
+      "City": "Atlanta",
+      "Name": "DBA Bar B Que",
+      "Website": "https://www.yelp.com/biz/d-b-a-barbecue-atlanta-6?q=saints"
+    },
+    {
+      "State": "FL",
+      "City": "Winter Park",
+      "Name": "Tibby's New Orleans Kitchen",
+      "Website": "https://www.yelp.com/biz/tibbys-new-orleans-kitchen-winter-park?q=saints"
+    },
+    {
+      "State": "TX",
+      "City": "Austin",
+      "Name": "Shoal Creek Saloon",
+      "Website": "https://www.yelp.com/biz/shoal-creek-saloon-austin?q=saints"
+    },
+    {
+      "State": "TX",
+      "City": "Houston",
+      "Name": "Ragin' Cajun",
+      "Website": "https://www.yelp.com/biz/ragin-cajun-restaurant-the-original-houston?q=saints"
+    },
+    {
+      "State": "IL",
+      "City": "Chicago",
+      "Name": "Frontier",
+      "Website": "https://www.yelp.com/biz/frontier-chicago-2?q=saints"
+    },
+    {
+      "State": "IL",
+      "City": "Chicago",
+      "Name": "The Standard Bar and Grill",
+      "Website": "https://www.yelp.com/biz/standard-bar-and-grill-chicago?q=saints"
+    },
+    {
+      "State": "CA",
+      "City": "San Francisco",
+      "Name": "Black Magic Voodoo Lounge",
+      "Website": "https://www.yelp.com/biz/black-magic-voodoo-lounge-san-francisco?q=saints"
+    },
+    {
+      "State": "CA",
+      "City": "Laytonville",
+      "Name": "Big Chief Restaurant and Draft Punk Bar",
+      "Website": "https://www.yelp.com/biz/big-chief-laytonville-4"
+    },
+    {
+      "State": "OR",
+      "City": "Portland",
+      "Name": "Scooter McQuade's Restaurant and Bar",
+      "Website": "https://www.yelp.com/biz/scooter-mcquades-restaurant-and-bar-portland"
+    },
+    {
+      "State": "CO",
+      "City": "Denver",
+      "Name": "Stoney's Bar and Grill",
+      "Website": "https://www.yelp.com/biz/stoneys-bar-and-grill-denver?q=saints"
+    },
+    {
+      "State": "PA",
+      "City": "Philadelphia",
+      "Name": "Acadia",
+      "Website": "https://www.yelp.com/biz/acadia-philadelphia-2?q=saints"
+    }
+  ]
+}

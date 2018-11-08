@@ -1,0 +1,8 @@
+  <div class="next-wrapper" ng-controller="nextCtrl">
+  	<h1>Next Games</h1>
+  	<p ng-repeat="x in nextData">
+  		<span style="text-transform:uppercase;font-weight:900;color:var(--gold);letter-spacing: 3px">{{ x.Opponent }}</span><br>
+  		{{ x.Date + ' | ' + x.Time}}<br>
+	    {{ x.Location }}
+	  </p>  	
+  </div>

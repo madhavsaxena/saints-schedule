@@ -1,0 +1,52 @@
+{
+  "previousgames": [
+    {
+      "Date": "09/09/2018",
+      "Opponent": "Tampa Bay",
+      "Location": "Home",
+      "Score": "40-48"
+    },
+    {
+      "Date": "09/16/2018",
+      "Opponent": "Cleveland",
+      "Location": "Home",
+      "Score": "21-18"
+    },
+    {
+      "Date": "09/23/2018",
+      "Opponent": "Atlanta",
+      "Location": "Away",
+      "Score": "43-37 OT"
+    },
+    {
+      "Date": "09/30/2018",
+      "Opponent": "NY Giants",
+      "Location": "Away",
+      "Score": "33-18"
+    },
+    {
+      "Date": "10/08/2018",
+      "Opponent": "Washington D.C.",
+      "Location": "Home",
+      "Score": "43-19"
+    },
+    {
+      "Date": "10/21/2018",
+      "Opponent": "Baltimore",
+      "Location": "Away",
+      "Score": "24-23"
+    },
+    {
+      "Date": "10/28/2018",
+      "Opponent": "Minnesota",
+      "Location": "Away",
+      "Score": "30-20"
+    },
+    {
+      "Date": "11/04/2018",
+      "Opponent": "Los Angeles",
+      "Location": "Home",
+      "Score": "45-35"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<div class="previous-wrapper" ng-controller="prevCtrl">
+  	<h1>Previous Games</h1>
+	  <p ng-repeat="x in prevData">
+	  	<span style="text-transform:uppercase;font-weight:900;color:var(--gold);letter-spacing:3px">{{ x.Opponent }}</span><br>
+	    {{ x.Date + ' | ' + x.Location}}<br>
+	    {{ x.Score }}
+	  </p>
+  </div>

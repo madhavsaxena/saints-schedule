@@ -1,0 +1,8 @@
+<div ng-controller="barsCtrl">
+  	<h1>Bars</h1>
+  	<p>Always call and make sure these bars are still around or are still Saints bars.</p>
+  	<p ng-repeat="x in barsData | orderBy:'State'" class="bar-single">
+  		<span class="state">{{ x.State }}</span><br>{{ x.City }}<br><span class="bar-name">{{ x.Name }}</span><br><a ng-href="{{ x.Website }}">More Info</a>
+  	</p>
+
+  </div>

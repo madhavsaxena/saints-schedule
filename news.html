@@ -1,0 +1,8 @@
+<div ng-controller="newsCtrl">
+  	<h1>News</h1>
+  	<div class="article" ng-repeat="x in articlesData | limitTo:10">
+  		<h3><a ng-href="{{ x.url }}">{{ x.title }}</a></h3>
+  		<h4>{{ x.source.name }}</h4>
+  		<p>{{ x.description }}</p>
+  	</div>
+</div>

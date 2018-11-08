@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Saints Schedule</title>
+  <meta name="description" content="Schedules and more info for the New Orleans Saints">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <link rel="stylesheet" href="assets/main.css">  
+  <link href="https://fonts.googleapis.com/css?family=Tajawal:400,500,900" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.js"></script>
+  <link rel="manifest" href="manifest.json" />
+
+  <!--ios-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link href="assets/icons/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <!--end ios-->
+
+</head>
+
+<body ng-app="saintsApp">
+
+<nav>
+	<a href="#!"><img src="assets/home.png">home</a>
+	<a href="#!previous"><img src="assets/arrow-back.png">previous</a>	
+	<a href="#!next"><img src="assets/arrow-forward.png">next</a>
+	<a href="#!bars"><img src="assets/bar.png">bars</a>
+	<a href="#!news"><img src="assets/news.png">news</a>
+</nav>
+
+	<div ng-view id="container"></div> 
+
+</body>
+
+<script>
+	var app = angular.module('saintsApp', ["ngRoute"]);
+	app.config(function ($routeProvider) {
+    $routeProvider
+    .when('/',
+    {
+        templateUrl: 'main.html',
+        controller: 'homeCtrl'
+    })
+    .when('/previous',
+    {
+        templateUrl: 'previous.html',
+        controller: 'prevCtrl'
+    })
+    .when('/next',
+    {
+        templateUrl: 'next.html',
+        controller: 'nextCtrl'
+    })
+    .when('/bars',
+    {
+        templateUrl: 'bars.html',
+        controller: "barsCtrl"
+    })
+    .when('/news',
+    {
+        templateUrl: 'news.html',
+        controller: "newsCtrl"
+    })     
+});
+
+app.controller('homeCtrl', function($scope) {
+    $scope.opp = "Cincinnati";
+  $scope.date = "11/11/2018";
+  $scope.time = "12:00PM CST";
+});
+
+app.controller('prevCtrl', function($scope, $http) {
+    $http.get("https://saintsschedule.info/json/previousgames.json").then(function(response) {
+        $scope.prevData = response.data.previousgames;
+    });
+});
+
+app.controller('nextCtrl', function($scope, $http) {
+    $http.get("https://saintsschedule.info/json/nextgames.json").then(function(response) {
+        $scope.nextData = response.data.nextgames;
+    });
+});
+
+app.controller('barsCtrl', function($scope, $http) {
+    $http.get("https://saintsschedule.info/json/bars.json").then(function(response) {
+        $scope.barsData = response.data.bars;
+    });
+});
+
+app.controller('newsCtrl', function($scope, $http) {
+    $http.get("https://newsapi.org/v2/everything?country-us&q=new+orleans+saints&from=2018-10-015&sortBy=publishedAt&lang=eng&apiKey=6277ac180cd342f28709eb2748c11fe6").then(function(response) {
+        $scope.articlesData = response.data.articles;
+    });
+});
+
+
+</script>
+
+<script>
+	navigator.serviceWorker && navigator.serviceWorker.register('./sw.js').then(function(registration) {
+  console.log('Excellent, registered with scope: ', registration.scope);
+});
+</script>
+</html>
