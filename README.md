@@ -1,4 +1,4 @@
-# saints-schedule
+# Saints Schedule PWA
 New Orleans Saints' game schedule, news, and bar database PWA SPA (AngularJS/HTML/CSS )
 
 ## The Basics
