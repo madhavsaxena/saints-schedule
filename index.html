@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="assets/main.css">  
   <link href="https://fonts.googleapis.com/css?family=Tajawal:400,500,900" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.js"></script>  
+
   <link rel="manifest" href="manifest.json" />
 
   <!--ios-->
@@ -97,7 +98,7 @@ app.controller('barsCtrl', function($scope, $http) {
 });
 
 app.controller('newsCtrl', function($scope, $http) {
-    $http.get("https://newsapi.org/v2/everything?country-us&q=new+orleans+saints&from=2018-10-015&sortBy=publishedAt&lang=eng&apiKey=6277ac180cd342f28709eb2748c11fe6").then(function(response) {
+    $http.get("https://saintsschedule.info/json/news.json").then(function(response) {
         $scope.articlesData = response.data.articles;
     });
 });
