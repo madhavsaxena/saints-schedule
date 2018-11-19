@@ -47,6 +47,18 @@
       "Opponent": "Los Angeles",
       "Location": "Home",
       "Score": "45-35"
+    },
+    {
+      "Date": "11/11/2018",
+      "Opponent": "Cincinnati",
+      "Location": "Away",
+      "Score": "51-14"
+    },
+    {
+      "Date": "11/18/2018",
+      "Opponent": "Philadelphia",
+      "Location": "Home",
+      "Score": "48-7"
     }
   ]
 }

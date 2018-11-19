@@ -22,6 +22,7 @@ self.addEventListener('install', function(e) {
         '/assets/main.css',
         '/assets/news.png',
         '/assets/rams.png',
+        '/assets/eagles.png',
       ]);
     })
   );
