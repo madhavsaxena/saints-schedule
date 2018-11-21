@@ -17,12 +17,10 @@ self.addEventListener('install', function(e) {
         '/assets/arrow-back.png',
         '/assets/arrow-forward.png',
         '/assets/bar.png',
-        '/assets/bengals.png',
+        '/assets/falcons.png',
         '/assets/home.png',
         '/assets/main.css',
         '/assets/news.png',
-        '/assets/rams.png',
-        '/assets/eagles.png',
       ]);
     })
   );
