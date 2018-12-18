@@ -65,6 +65,24 @@
       "Opponent": "Atlanta",
       "Location": "Home",
       "Score": "31-17"
+    },
+    {
+      "Date": "11/29/2018",
+      "Opponent": "Dallas",
+      "Location": "Away",
+      "Score": "10-13"
+    },
+    {
+      "Date": "12/09/2018",
+      "Opponent": "Tampa Bay",
+      "Location": "Away",
+      "Score": "28-14"
+    },
+    {
+      "Date": "12/17/2018",
+      "Opponent": "Carolina",
+      "Location": "Away",
+      "Score": "12-9"
     }
   ]
 }

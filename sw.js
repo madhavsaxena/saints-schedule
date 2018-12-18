@@ -20,7 +20,7 @@ self.addEventListener('install', function(e) {
         '/assets/home.png',
         '/assets/main.css',
         '/assets/news.png',
-        '/assets/cowboys.png',
+        '/assets/steelers.png',
       ]);
     })
   );
