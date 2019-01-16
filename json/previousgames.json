@@ -83,6 +83,24 @@
       "Opponent": "Carolina",
       "Location": "Away",
       "Score": "12-9"
+    },
+    {
+      "Date": "12/24/2018",
+      "Opponent": "Pittsburgh",
+      "Location": "Home",
+      "Score": "31-28"
+    },
+    {
+      "Date": "12/31/2018",
+      "Opponent": "Carolina",
+      "Location": "Home",
+      "Score": "33-14"
+    },
+    {
+      "Date": "01/13/2019",
+      "Opponent": "Philadelphia",
+      "Location": "Home",
+      "Score": "48-7"
     }
   ]
 }
